@@ -1,1 +1,14 @@
-<p>contador works!</p>
+<div class="flex flex-col gap-6 ">
+    <app-title main="Contador" sub="exemplo de contador"></app-title>
+    <div>
+        <p>O contador está em desenvolvimento.</p>
+        <div class="flex flex-col gap-6'">
+            <span class="text-5xl font-bold">{{count()}}</span>
+            <div class="flex gap-3">
+                <button (click)="increment()" class="btn btn-primary">Incrementar</button>
+                <button (click)="decrement()" class="btn btn-secondary">Decrementar</button>
+                <button (click)="reset()" class="btn btn-danger">Resetar</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -5,3 +5,21 @@ body {
    background-color: #000000;
    color: #ffffff;
 }
+
+
+/* Tailwind CSS Button Styles */
+@layer components {
+   .btn {
+       @apply inline-flex justify-center items-center;
+       @apply px-4 py-2 rounded-lg;
+   }
+   .btn-primary {
+         @apply bg-blue-600 text-white hover:bg-blue-700;
+   }
+   .btn-secondary {
+         @apply bg-gray-600 text-white hover:bg-gray-700;
+   }
+   .btn-danger {
+         @apply bg-red-600 text-white hover:bg-red-700;
+   }
+}
