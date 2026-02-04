@@ -13,4 +13,15 @@ export class TodosComponent {
 
   readonly todos = inject(TodosServiceService);
 
+  addTodo(event: Event) {
+    event.preventDefault();
+
+    const inputElement = event.target as HTMLInputElement;
+
+    const title = inputElement.value.trim();
+    if (!title) return;
+
+    this.todos.add(title);
+    inputElement.value = '';
+  }
 }
